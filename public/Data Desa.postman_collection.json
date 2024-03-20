@@ -1,0 +1,121 @@
+{
+	"info": {
+		"_postman_id": "97fe1767-fa18-4e59-a7e9-fd4cb7547127",
+		"name": "Data Desa",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28746254"
+	},
+	"item": [
+		{
+			"name": "Daftar Desa",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/desa",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"desa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Detail Data Desa",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/desa/83810",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"desa",
+						"83810"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Data Desa",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"code\" : \"1000\",\r\n    \"district_code\": \"10000\",\r\n    \"name\": \"badg\",\r\n    \"meta\" : \"1000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/desa",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"desa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Data Desa",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"code\" : \"1000\",\r\n    \"district_code\": \"10000\",\r\n    \"name\": \"badg\",\r\n    \"meta\" : \"9000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/desa/83810",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"desa",
+						"83810"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Data Desa",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/desa/83810",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"desa",
+						"83810"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
